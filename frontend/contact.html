@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Artist Submission - ArtConnect</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Header with text first and small logo beside it -->
+    <header>
+        <div class="header-logo-group">
+            <h1>ArtConnect</h1>
+            <img src="images/logo.jpeg" alt="ArtConnect Logo" class="header-icon">
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="Events.html">Events</a>
+        <a href="contact.html">Contact</a>
+        <a href="References.html">References</a>
+    </nav>
+
+    <main>
+        <!-- --- ARTIST SUBMISSION FORM SECTION --- -->
+        <section class="form-section">
+            <h2>Artist Submission Page</h2>
+            <p class="form-subtitle">Share your creativity with the community! Fill out the details below to submit your artwork to our digital catalog.</p>
+
+            <!-- This is the alert box where your JavaScript errors or success messages will appear -->
+            <div id="error-message" class="error-box" style="display: none;"></div>
+
+            <!-- The Form -->
+            <form id="artwork-form" novalidate>
+                
+                <!-- 1. Artist Name -->
+                <div class="form-group">
+                    <label for="artist-name">Artist Name</label>
+                    <input type="text" id="artist-name" placeholder="e.g. Janet Awopeju">
+                </div>
+
+                <!-- 2. Email Address -->
+                <div class="form-group">
+                    <label for="artist-email">Email Address</label>
+                    <input type="email" id="artist-email" placeholder="e.g. name@cougarnet.uh.edu">
+                </div>
+
+                <!-- 3. Artwork Title -->
+                <div class="form-group">
+                    <label for="artwork-title">Artwork Title</label>
+                    <input type="text" id="artwork-title" placeholder="e.g. Sunset Dreams">
+                </div>
+
+                <!-- 4. Category Dropdown -->
+                <div class="form-group">
+                    <label for="artwork-category">Category</label>
+                    <select id="artwork-category">
+                        <option value="">-- Select a Category --</option>
+                        <option value="painting">Painting</option>
+                        <option value="abstract">Abstract</option>
+                        <option value="landscape">Landscape</option>
+                        <option value="digital">Digital Art</option>
+                    </select>
+                </div>
+
+                <!-- 5. Price -->
+                <div class="form-group">
+                    <label for="artwork-price">Price ($)</label>
+                    <input type="text" id="artwork-price" placeholder="e.g. 250 or 1200">
+                </div>
+
+                <!-- 6. Description -->
+                <div class="form-group">
+                    <label for="artwork-description">Description</label>
+                    <textarea id="artwork-description" rows="5" placeholder="Tell us about the inspiration, mediums used, and story behind this piece..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-form-btn">Submit Artwork</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ArtConnect. All rights reserved.</p>
+    </footer>
+
+    <!-- Hooks up your JavaScript file at the very bottom -->
+    <script src="js/script.js"></script>
+</body>
+</html>
