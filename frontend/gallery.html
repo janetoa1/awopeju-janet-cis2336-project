@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ARTCONNECT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-logo-group">
+            <h1>ArtConnect</h1>
+            <img src="images/logo.jpeg" alt="ArtConnect Logo" class="header-icon">
+        </div>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="Events.html">Events</a>
+            <a href="contact.html">Contact</a>
+            <a href="References.html">References</a>
+        </nav>
+        <main>
+        <!-- Interactive Search & Filter Controls -->
+        <section class="gallery-section">
+            <h2>Artwork Gallery</h2>
+            <p>Every piece of art tells a story, captured in the interplay of texture, color, and imagination. The ArtConnect Gallery brings together a curated collection of original works from independent contemporary creators, bridging the gap between passionate artists and art lovers. Explore the grid below to discover captivating landscapes, bold abstract expressions, and striking urban murals. Take your time, filter by your favorite styles, and find the perfect masterpiece to bring inspiration into your own space.</p>
+
+            <!-- Interactive Search & Filter Controls -->
+            <div class="gallery-controls">
+                <input type="text" id="search-bar" placeholder="Search by title or artist...">
+                
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="texture">Texture</option>
+                    <option value="abstract">Abstract</option>
+                    <option value="nature">Nature</option>
+                    <option value="urban">Urban</option>
+                    <option value="watercolor">Watercolor</option>
+                    <option value="modern">Modern</option>
+                </select>
+                <select id="sort-filter">
+                    <option value="default">Default</option>
+                    <option value="low-high">Price: Low to High</option>
+                    <option value="high-low">Price: High to Low</option>
+                    <option value="a-z">Title: A-Z</option>
+                    <option value="z-a">Title: Z-A</option>
+                </select>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Artwork 1 -->
+                <div class="art-card" data-category="texture" data-price="Not for Sale">
+                    <img src="images/photo5.jpg" alt="Sunset Dreams">
+                    <div class="art-card-info">
+                        <h3>Sunset Dreams</h3>
+                        <p class="artist-name">By: Audubon, John James</p>
+                        <span class="category-badge">Texture</span>
+                        <p class="price badge-NFS">Not for Sale</p>
+                    </div>
+                </div>
+                <!-- Artwork 2 -->
+                <div class="art-card" data-category="abstract" data-price="500">
+                    <img src="images/photo6.jpg" alt="Oil painting blend">
+                    <div class="art-card-info">
+                        <h3>Oil Painting Blend</h3>
+                        <p class="artist-name">By: Michael Johnson</p>
+                        <span class="category-badge">Oil Painting</span>
+                        <p class="price">$500.00</p>
+                    </div>
+                </div>
+                <!-- Artwork 3 -->
+                <div class="art-card" data-category="nature" data-price="400">
+                    <img src="images/photo8.jpg" alt="Nature" >
+                    <div class="art-card-info">
+                        <h3>Nature's Palette</h3>
+                        <p class="artist-name">By: Alice Donovan Rouse</p>
+                        <span class="category-badge">Nature</span>
+                        <p class="price">$400.00</p>
+                    </div>
+                </div>
+                <!-- Artwork 4 -->
+                <div class="art-card" data-category="urban" data-price="450">
+                    <img src="images/photo9.jpg" alt="Mural">
+                    <div class="art-card-info">
+                        <h3>Mural Graffiti</h3>
+                        <p class="artist-name">By: Dan Farrell</p>
+                        <span class="category-badge">Mural</span>
+                        <p class="price">$450.00</p>
+                    </div>
+                </div>
+                <!-- Artwork 5 -->
+                <div class="art-card" data-category="watercolor" data-price="650">
+                    <img src="images/photo10.jpg" alt="Watercolor">
+                    <div class="art-card-info">
+                        <h3>Watercolor Dreams</h3>
+                        <p class="artist-name">By: Carl Haag</p>
+                        <span class="category-badge">Watercolor</span>
+                        <p class="price">$650.00</p>
+                    </div>
+                </div>
+                <!-- Artwork 6 -->
+                <div class="art-card" data-category="modern" data-price="Not for Sale">
+                    <img src="images/photo4.jpg" alt="Echoes of Time">
+                    <div class="art-card-info">
+                        <h3>Echoes of Time</h3>
+                        <p class="artist-name">By: Robert Vance</p>
+                        <span class="category-badge">Modern</span>
+                        <p class="price badge-NFS">Not for Sale</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 ArtConnect. All rights reserved.</p>
+    </footer>
+</body>
+</html>
