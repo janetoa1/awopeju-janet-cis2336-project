@@ -13,17 +13,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px; /* The gap spacing between ArtConnect and the logo */
+    gap: 15px; 
 }
-/* header h1 {
-    font-size: 2.5rem;
-    color: crimson;
-    margin: 0;
-    font-weight: 800;
-    letter-spacing: -1px; */
 
 .header-icon {
-    height: 50px; /* Change this to 40px if you want it even smaller! */
+    height: 50px;
     width: auto;
     object-fit: contain;
 }
@@ -103,15 +97,14 @@ h2{
     text-align: center;
 }
 
-/* Sets up a spacious grid layout for your cards */
+
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); /* Allocates a wide grid spot for each card */
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 40px;
     margin-top: 30px;
 }
 
-/* Individual Card Styling */
 .art-card {
     background: white;
     border-radius: 12px;
@@ -119,16 +112,14 @@ h2{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
-/* HERE IS THE SIZE BOOST: Forces the pictures to scale up safely */
 .art-card img {
     width: 100%;
-    height: 350px;       /* Pushes image heights to be big and impactful */
+    height: 350px;     
     object-fit: contain;
-    background-color: white;   /* Magic crop: prevents tall/wide pictures from distorting */
+    background-color: white;   
     display: block;
 }
 
-/* Content padded area beneath the large image */
 .art-card-info {
     padding: 25px;
 }
@@ -160,7 +151,6 @@ h2{
     font-size: 1.2rem;
 }
 
-/* Handles your capital class name 'badge-NFS' safely */
 .badge-NFS {
     color: #ef4444 !important;
 }
@@ -181,7 +171,7 @@ h2{
 }
 
 #search-bar {
-    flex: 2; /* Gives the search bar extra layout width spacing */
+    flex: 2;
 }
 
 #category-filter {
@@ -190,50 +180,42 @@ h2{
 
 
 
-/* events section */
 
-/* --- EVENTS PAGE STYLING --- */
-
-/* Center the events container on the screen */
 .events-section {
     max-width: 900px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
-/* Center the main title */
+
 .events-section h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2rem;
 }
 
-/* Add space between each event row */
 .event {
     margin-bottom: 30px;
 }
 
-/* Transform the card into a clean side-by-side row layout */
 .event .art-card {
     display: flex;
     background-color: #ffffff;
     border-radius: 8px;
-    overflow: hidden; /* Keeps image corners rounded */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft subtle shadow */
-    align-items: center; /* Vertically centers the text with the image */
+    overflow: hidden; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+    align-items: center;
 }
 
-/* Control the image size so all images match perfectly */
 .event .art-card img {
-    width: 300px; /* Uniform width */
-    height: 200px; /* Uniform height */
-    object-fit: cover; /* Prevents the image from stretching or squeezing */
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover; 
 }
 
-/* Padding and spacing for the text details side */
 .event .event-info {
     padding: 25px;
-    flex: 1; /* Allows text to take up remaining space */
+    flex: 1;
 }
 
 /* Make titles pop */
@@ -243,7 +225,6 @@ h2{
     font-size: 1.4rem;
 }
 
-/* Add a tiny bit of breathing room between information lines */
 .event .event-info p {
     margin: 6px 0;
     color: #444;
@@ -252,27 +233,26 @@ h2{
 
 .events-hero {
     text-align: center;
-    background-color: #f1f8ff; /* Soft light blue background */
+    background-color: #f1f8ff;
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 30px;
 }
 .submit-btn {
     display: inline-block;
-    background-color: #007bff; /* Accent blue */
+    background-color: #007bff; 
     color: white;
     padding: 10px 20px;
-    text-decoration: none; /* Removes underline */
+    text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
     margin-top: 10px;
 }
 .submit-btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
 }
 
 
-/* --- SUBMISSION FORM LAYOUT --- */
 .form-section {
     max-width: 600px;
     margin: 40px auto;
@@ -295,7 +275,7 @@ h2{
     margin-bottom: 25px;
 }
 
-/* Spaces out input labels and fields */
+
 .form-group {
     margin-bottom: 18px;
 }
@@ -319,7 +299,6 @@ h2{
     font-family: inherit;
 }
 
-/* Style for the validation alerts */
 .error-box {
     padding: 15px;
     margin-bottom: 20px;
@@ -346,15 +325,10 @@ h2{
     background-color: #0056b3;
 }
 
-/* =========================================
-   FAQ SECTION (HOME PAGE BOTTOM)
-   ========================================= */
-
-/* --- FAQ SECTION CSS --- */
 
 .faq-section {
     max-width: 800px;
-    margin: 60px auto; /* Centers the section and adds spacing */
+    margin: 60px auto; 
     padding: 0 20px;
 }
 
@@ -381,7 +355,6 @@ h2{
     border-bottom: none;
 }
 
-/* Clickable question button */
 .faq-question {
     width: 100%;
     background: none;
@@ -402,7 +375,7 @@ h2{
     background-color: #f9f9f9;
 }
 
-/* Arrow indicator */
+
 .faq-question::after {
     content: "▼";
     font-size: 0.8rem;
@@ -410,23 +383,19 @@ h2{
     transition: transform 0.2s ease;
 }
 
-/* Rotate arrow up when active */
 .faq-question.active::after {
     transform: rotate(180deg);
 }
 
-/* The answer box (hidden by default) */
 .faq-answer {
     display: none;
     background-color: #fafafa;
 }
 
-/* FORCE the answer to display when it has the "show" class */
 .faq-answer.show {
     display: block !important;
 }
 
-/* Inner padding for text */
 .faq-answer p {
     padding: 20px;
     margin: 0;
@@ -437,58 +406,50 @@ h2{
 
 
 
-/* =========================================
-   HOMEPAGE POLISH & GLOW-UP 
-   ========================================= */
 
-/* 1. Wrap your main content sections in clean card-style boxes */
 main section {
     background-color: #ffffff;
-    max-width: 900px;          /* Prevents text from stretching too wide */
-    margin: 0 auto 30px auto;  /* Centers the section and adds space below */
-    padding: 35px 40px;        /* Soft inner breathing room */
-    border-radius: 12px;       /* Match your FAQ rounded corners */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03); /* Extremely soft shadow */
+    max-width: 900px;          
+    margin: 0 auto 30px auto;  
+    padding: 35px 40px;        
+    border-radius: 12px;       
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03); 
     border: 1px solid #eaeaea;
 }
 
-/* 2. Upgrade your Featured Artwork cards */
+
 .artwork-card {
     background-color: #ffffff;
     border: 1px solid #eaeaea;
     border-radius: 10px;
     padding: 15px;
     text-align: center;
-    width: 240px;              /* Forces all cards to be a uniform, structured width */
+    width: 240px;              
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Add a clean mouse hover lift effect */
 .artwork-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* 3. Force all homepage artwork images to be uniform and beautifully cropped */
 .artwork {
-    width: 100%;               /* Fills the card width safely */
-    height: 220px;             /* Locks them to the exact same height */
-    object-fit: cover;         /* Automatically crops without squishing/stretching! */
+    width: 100%;               
+    height: 220px;            
+    object-fit: cover;        
     border-radius: 6px;
 }
 
-/* 4. Fix typo color definition in your original artwork-card h3 */
 .artwork-card h3 {
     margin-top: 15px;
     margin-bottom: 8px;
     font-size: 1.2rem;
-    color: darkblue;           /* Clean solid darkblue color */
+    color: darkblue;          
     font-weight: bold;
     text-align: center;
 }
 
-/* 5. Clean up paragraph spacing inside cards */
 .artwork-card p {
     margin: 0;
     font-size: 0.95rem;
