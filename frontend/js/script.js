@@ -155,7 +155,31 @@ document.addEventListener("DOMContentLoaded", function () {
             errorBox.style.backgroundColor = "#ddffdd"; // Light green success box
             errorBox.style.color = "#006600"; // Dark green text
             errorBox.style.border = "1px solid #99ff99";
-            errorBox.innerHTML = "<strong>Success!</strong> Your artwork has been submitted (Client-side validation passed).";
+            fetch("http://localhost:3000/submit-artwork", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        artistName: name,
+                        email: email,
+                        title: title,
+                        category: category,
+                        price: price,
+                        description: description
+                    })
+                })
+                
+                .then(function(response) {
+                    return response.text();
+                })
+                .then(function(message) {
+                    errorBox.innerHTML = "<strong>Success!</strong> " + message;
+                })
+                .catch(function(error) {
+                    errorBox.innerHTML = "There was a problem submitting the artwork.";
+                });
+
             
     
             form.reset();
