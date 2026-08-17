@@ -35,3 +35,7 @@ app.post("/submit-artwork", function(req, res) {
 
     res.send("Artwork submitted successfully!");
 });
+
+app.get("/artworks", function(req, res) {
+    res.json(artworks);
+});
