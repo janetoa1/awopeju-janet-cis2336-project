@@ -56,10 +56,68 @@ This project adheres to academic integrity guidelines. All external assets, code
 *   **Google Fonts**: Utilized to safely import and load the project's primary clean modern typography pairings.
 
 ### 🤖 Generative AI Tools & Usage
-*   **AI Assistant**: Gemini (Google)
+*   **AI Assistant**: Gemini (Google), Chatgpt
 *   **Usage Scope**: 
     *   Assisted with drafting custom, lightweight CSS layouts (responsive flexbox galleries, absolute positioning for responsive video wrappers, and small-logo navigation branding rules).
     *   Debugged structural logic errors causing the FAQ accordion arrows to rotate without revealing hidden text.
     *   Scaffolded semantic HTML elements for the multi-field Artist Submission Page form and its associated error/success display components.
+     * Assisted with creating and debugging the Node.js/Express backend.
+  * Helped connect the frontend Artist Submission form to the backend using the Fetch API.
+  * Assisted with troubleshooting CORS issues between the frontend running on port 9000 and backend running on port 3000.
+  * Helped implement and test the `/submit-artwork` and `/artworks` backend routes.
+  * Assisted with testing and debugging the frontend/backend integration.
+  * Assisted with organizing and updating project documentation in the README.md file.
+
     *   **Generated project repository documentation**, providing structural markdown layouts and technical summaries for the `README.md` file.
 *   **Prompt Documentation**: A complete log of the exact prompt history submitted during the coding process is fully documented on the web project's internal **References Page** (`References.html`).
+ 
+
+
+
+---
+
+## Backend Integration
+
+The ArtConnect project includes a Node.js and Express backend that works with the Artist Submission Page. The backend receives artwork information submitted through the frontend and stores the submitted artwork while the server is running.
+
+### Backend Features
+
+- Receives artist submission data from the frontend.
+- Uses Express to handle server requests.
+- Uses CORS to allow communication between the frontend and backend.
+- Stores submitted artwork in an array while the server is running.
+- Provides an endpoint for viewing submitted artwork.
+
+### Setup and Installation
+
+1. Open the project in Visual Studio Code.
+2. Open a terminal and navigate to the backend folder:
+
+   `cd backend`
+
+3. Install the required dependencies:
+
+   `npm install`
+
+4. Start the backend server:
+
+   `node server.js`
+
+5. The backend server will run on port 3000.
+
+6. Run the frontend separately and open it in the browser.
+
+### Usage
+
+Users can open the Artist Submission Page and enter their artist name, email address, artwork title, category, price, and description. When the form is submitted, the frontend sends the information to the Express backend.
+
+If the submission is successful, a success message is displayed to the user.
+
+Submitted artwork can also be viewed through the backend `/artworks` endpoint.
+
+### Code Overview
+
+- `backend/server.js` contains the Express server and API routes.
+- `backend/package.json` contains the backend dependencies and project configuration.
+- `frontend/` contains the HTML, CSS, JavaScript, images, and other frontend files.
+- The frontend JavaScript uses `fetch()` to communicate with the backend.
